@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% extends 'nav.html' %}
+{% block content %}
+    {% if error %}
+        {{ error }}
+        <br>
+        <br>
+    {% endif %}
+    <h1>Login</h1>
+    <form method="post" action="/account/login/">
+    {% csrf_token %}
+    Username :
+    <br>
+    <input type="text" name="username">
+    <br>
+    Password :
+        <br>
+    <input type="password" name="password">
+    <br>
+        <br>
+    <input type="submit" class="btn btn-primary" value="Login">
+    </form>
+{% endblock %}
+</body>
+</html>
