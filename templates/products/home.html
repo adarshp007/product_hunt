@@ -8,6 +8,9 @@
 {% extends 'nav.html' %}
 {% block content %}
     <h2>Happy {% now "Y" %}</h2>
+    {% for i in bb %}
+    <img src="{{ i.icons}}" width="200" height="200">
+    {% endfor %}
 {% endblock %}
 </body>
 </html>
