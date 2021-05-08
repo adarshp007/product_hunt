@@ -9,15 +9,15 @@
 {% block content %}
     <div class="row">
     <div class="col-lg-2">
-        <img src="{{ prod.icons }}" width="200" height="200" class="img-fluid">
+        <img src="{{ prod.icons }}" width="150" height="150" class="img-fluid">
     </div>
-    <div class="col-lg-10">
+    <div class="col-lg-10" style="padding-top: 30px;">
             <a href="{{ prod.url }}"><h1>{{ prod.title }}</h1></a>
     </div>
     </div>
-<div class="row">
-    <div class="col-lg-8">
-        <img src="{{ prod.image }}" width="750" height="400" class="img-fluid"/>
+<div class="row" style="padding-top: 5px;">
+    <div class="col-lg-8" >
+        <img src="{{ prod.image }}" width="750" height="400" class="img-fluid" style="border: 5px solid black;border-radius: 5px; "/>
     </div>
     <div class="col-lg-4">
             <a href="javascript:{document.getElementById('upvote').submit()}"><button class="btn btn-primary btn-lg btn-block" > <span class="oi oi-caret-top"></span>&nbsp Upvote {{ prod.votes}}</button></a>

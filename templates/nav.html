@@ -7,16 +7,19 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link href="{% static 'open-iconic/font/css/open-iconic-bootstrap.css' %}" rel="stylesheet">
-    <meta charset="UTF-8">
-    <title>Title</title>
+
+
+    <title>Product Hunt</title>
+    <link rel="icon" href="{% static 'img/logo2.png' %}" type="image/x-icon">
 </head>
 <body>
 <nav class="navbar navbar-inverse">
   <div class="container">
     <div class="navbar-header">
-        <a class="navbar-brand" href="{% url 'home'%}">Product Hunt</a>
+        <a class="navbar-brand" href="{% url 'home'%}" style="font-weight: 600;">Product Hunt</a>
     </div>
-
+{#  <a class="nanbar-brand mx-auto" href="{% url 'home' %}"><img src="{% static 'img/logo2.png' %}" width="150" height="50" alt="">#}
+{##}
     <ul class="nav navbar-nav navbar-right">
         {% if user.is_authenticated %}
             <li> <a href="{% url 'create' %}"><span class="oi oi-plus"></span></a></li>

@@ -1,23 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <style>
-        .pad{
-            padding-top: 5px;
-        }
-    </style>
-</head>
-<body>
+
 {% extends 'nav.html' %}
 {% block content %}
 {% for i in prod %}
-    <div class="row pad">
+    <div class="row " style="padding-top:5px;">
     <div class="col-md-2" onclick="window.location='{% url 'detail' i.id %}'" style="cursor:pointer;">
         <img src="{{ i.image }}"width="150" height="150">
     </div>
-    <div class="col-md-6">
+    <div class="col-md-6" onclick="window.location='{% url 'detail' i.id %}'" style="cursor:pointer;">
         <h3>{{ i.title }}</h3>
         <p>{{ i.summary }}</p>
     </div>
@@ -35,5 +24,3 @@
 
 {% endblock %}
 
-</body>
-</html>
