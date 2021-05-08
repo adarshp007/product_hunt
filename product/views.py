@@ -1,13 +1,14 @@
 import datetime
 from django.utils import  timezone
 from django.core.files.storage import FileSystemStorage
-from django.shortcuts import render,redirect
+from django.shortcuts import render,redirect,get_object_or_404
 from django.contrib.auth.decorators import login_required
 from . models import Product
 # Create your views here.
 def home(request):
-    return render(request, 'products/home.html')
-@login_required
+    product=Product.objects.all()
+    return render(request, 'products/home.html',{'prod':product})
+@login_required(login_url="/account/signup/")
 def create(request):
     if request.method=="POST":
         product=Product()
@@ -32,8 +33,17 @@ def create(request):
         product.pub_date=timezone.datetime.now()
         product.hunter=request.user
         product.save()
-        pr=Product.objects.all()
-        print(len(pr))
-        return render(request,'products/home.html',{'bb':pr})
+
+        return redirect('/product/'+str(product.id))
     else:
         return render(request,'products/create.html')
+def detail(request,product_id):
+    product=get_object_or_404(Product,pk=product_id)
+    return render(request,'products/detail.html',{'prod':product})
+@login_required(login_url="/account/signup/")
+def upvote(request,product_id):
+    if request.method=="POST":
+        product=get_object_or_404(Product,pk=product_id)
+        product.votes += 1
+        product.save()
+        return redirect('/product/'+str(product.id))

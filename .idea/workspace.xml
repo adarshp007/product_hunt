@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="732537eb-5bfa-4f9b-b801-4d951d911684" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/url.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/products/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/products/detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Producthunt/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Producthunt/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Producthunt/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Producthunt/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/product/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/product/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/url.py" beforeDir="false" afterPath="$PROJECT_DIR$/product/url.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/product/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/nav.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/products/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/products/home.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -36,18 +32,19 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Producthunt/static" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/product/static" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Adarsh\Desktop\Internship\django\Producthunt\Producthunt\static" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Adarsh\Desktop\Internship\django\Producthunt\product\static\img" />
       <recent name="C:\Users\Adarsh\Desktop\Internship\django\Producthunt\Producthunt\static" />
       <recent name="C:\Users\Adarsh\Desktop\Internship\django\Producthunt\Producthunt\static\img" />
       <recent name="C:\Users\Adarsh\Desktop\Internship\django\Producthunt\templates\products" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Adarsh\Desktop\Internship\django\Producthunt\product\static" />
+      <recent name="C:\Users\Adarsh\Desktop\Internship\django\Producthunt\Producthunt\static" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -99,7 +96,7 @@
       <option name="presentableId" value="Default" />
       <updated>1620292998318</updated>
       <workItem from="1620293120914" duration="15062000" />
-      <workItem from="1620325611682" duration="17709000" />
+      <workItem from="1620325611682" duration="29096000" />
     </task>
     <servers />
   </component>

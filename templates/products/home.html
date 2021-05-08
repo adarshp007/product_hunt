@@ -3,14 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        .pad{
+            padding-top: 5px;
+        }
+    </style>
 </head>
 <body>
 {% extends 'nav.html' %}
 {% block content %}
-    <h2>Happy {% now "Y" %}</h2>
-    {% for i in bb %}
-    <img src="{{ i.icons}}" width="200" height="200">
+{% for i in prod %}
+    <div class="row pad">
+    <div class="col-md-2" onclick="window.location='{% url 'detail' i.id %}'" style="cursor:pointer;">
+        <img src="{{ i.image }}"width="150" height="150">
+    </div>
+    <div class="col-md-6">
+        <h3>{{ i.title }}</h3>
+        <p>{{ i.summary }}</p>
+    </div>
+    <div class="col-md-4">
+        <a href="javascript:{document.getElementById('upvote{{ i.id }}').submit()}"><button class="btn btn-primary btn-lg btn-block" > <span class="oi oi-caret-top"></span>&nbsp Upvote {{ i.votes}}</button></a>
+
+    </div>
+    </div>
+    <form id="upvote{{ i.id }}" action="{% url 'upvote' i.id %}" method="post">
+    {% csrf_token %}
+    <input type="hidden">
+    </form>
+
     {% endfor %}
+
 {% endblock %}
+
 </body>
 </html>
