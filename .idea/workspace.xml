@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="732537eb-5bfa-4f9b-b801-4d951d911684" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/product/static/img/logo2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/nav.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/products/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/products/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/products/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/products/home.html" afterDir="false" />
-    </list>
+    <list default="true" id="732537eb-5bfa-4f9b-b801-4d951d911684" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +25,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/product/static" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
@@ -96,7 +90,7 @@
       <updated>1620292998318</updated>
       <workItem from="1620293120914" duration="15062000" />
       <workItem from="1620325611682" duration="31472000" />
-      <workItem from="1620476003957" duration="5716000" />
+      <workItem from="1620476003957" duration="6396000" />
     </task>
     <servers />
   </component>
